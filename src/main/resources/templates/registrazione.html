@@ -7,11 +7,12 @@
     <title>Registrazione</title>
 </head>
 <body>
-    <form method="post" action="">
+    <form method="post" th:action="@{/user/new}" th:object="${newUtente}">
         Nickname: <input th:field="*{nickname}" type="text"><br>
         Email: <input th:field="*{email}" type="email"><br>
         Password: <input th:field="*{password}" type="password"><br>
-        <input type="submit" value="Invia">
+        <input type="submit" value="Invia"><br>
+        <a th:href="@{/}">torna alla Home</a>
     </form>
 </body>
 </html>

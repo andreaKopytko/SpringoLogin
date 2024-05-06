@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Welcome aboard!</h1>
-    <p>Clicca <a href="./new">qui</a> se voui registrarti,<br> altrimenti clicca <a href="./login">qui</a> se vuoi fare il login</p>
+    <p>Clicca <a th:href="@{/user?type=new}">qui</a> se voui registrarti,
+        <br> altrimenti clicca <a th:href="@{/user?type=login}">qui</a> se vuoi fare il login</p>
 </body>
 </html>

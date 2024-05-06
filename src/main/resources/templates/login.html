@@ -7,9 +7,9 @@
     <title>Login</title>
 </head>
 <body>
-    <form method="post" th:action="@{/user}" th:object="${Utente}">
-        Nickname: <input type="text"><br>
-        Password: <input type="password"><br>
+    <form method="post" th:action="@{/user/login}" th:object="${signedUtente}">
+        Nickname: <input type="text" th:field="*{nickname}"><br>
+        Password: <input type="password" th:field="*{password}"><br>
         <input type="submit" value="Invia">
     </form>
 </body>
